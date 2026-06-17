@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Interactive Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Interactive Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio!</h1>
-    </header>
+  <header>
+    <h1>Welcome to My Portfolio!</h1>
+    <p>Created by a Middle School Teacher</p>
+  </header>
 
-    <div id="about">
-        <p>Hello! I am a budding web developer passionate about coding and technology. Here are some of my interests:</p>
-        <ul id="interests-list"></ul>
-    </div>
+  <div id="about">
+    <h2>About Me</h2>
+    <p>I am a middle school teacher with a background in mathematics, financial literacy, and educational technology. Before entering education, I spent over a decade in retail management and helped build and manage a small business, experiences that strengthened my leadership, problem-solving, and communication skills. I hold a Master's degree in Learning and Technology and am passionate about integrating technology into the classroom to create engaging, real-world learning experiences.
 
-    <div class="contact-form">
-        <h2>Contact Me</h2>
-        <input type="text" id="name" placeholder="Enter your name">
-        <button id="submit-btn">Submit</button>
-    </div>
+As an educator, I strive to help students develop critical thinking, creativity, and problem-solving skills through hands-on learning and collaborative activities. Pursuing a Computer Science Credential will allow me to expand opportunities for students by introducing them to computational thinking, programming, and emerging technologies. My goal is to equip students with the knowledge and skills needed to succeed in an increasingly digital world while fostering curiosity, innovation, and responsible technology use.
+</p>
 
-    <img src="https://i.pinimg.com/280x280_RS/af/92/d8/af92d870aec348f78607a1d0de047b33.jpg" alt="My Image" class="profile-img">
+    <img src="https://i.pinimg.com/280x280_RS/af/92/d8/af92d870aec348f78607a1d0de047b33.jpg" alt="Profile image" class="profile-img">
 
-    <script src="script.js"></script>
+    <h3>My Interests</h3>
+    <ul id="interests-list"></ul>
+
+    <p>
+      Check out my favorite coding website:
+      <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+    </p>
+  </div>
+
+  <div class="contact-form">
+    <h2>Contact Me</h2>
+    <input type="text" id="name" placeholder="Enter your name">
+    <button id="submit-btn">Submit</button>
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
