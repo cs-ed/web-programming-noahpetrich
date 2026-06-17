@@ -1,27 +1,27 @@
-window.onload = function() {
-  //What should we do when the page first loads?
-};
-const interests = ["Web Development", "Artificial Intelligence", "Gaming", "Photography"];
-let nameInput = document.getElementById('name');
-let submitButton = document.getElementById('submit-btn');
-let interestsList = document.getElementById('interests-list');
+const interests = ["Coding", "Gaming", "Technology", "Art", "Learning new skills"];
+let userName = "";
 
 function displayInterests() {
-    for (let i = 0; i < interests.length; i++) {
-        let listItem = document.createElement('li');
-        listItem.textContent = interests[i];
-        interestsList.appendChild(listItem);
-    }
+  const list = document.getElementById("interests-list");
+
+  for (let interest of interests) {
+    let item = document.createElement("li");
+    item.textContent = interest;
+    list.appendChild(item);
+  }
 }
 
-submitButton.addEventListener('click', function() {
-    const name = nameInput.value;
-    if (name) {
-        alert(`Thank you, ${name}! Your message has been submitted.`);
-        nameInput.value = ''; // Reset input field
-    } else {
-        alert("Please enter your name.");
-    }
-});
+function submitName() {
+  userName = document.getElementById("name").value;
+  const message = document.getElementById("message");
+
+  if (userName === "") {
+    message.textContent = "Please enter your name.";
+  } else {
+    message.textContent = "Thanks for visiting my portfolio, " + userName + "!";
+  }
+}
+
+document.getElementById("submit-btn").addEventListener("click", submitName);
 
 displayInterests();
